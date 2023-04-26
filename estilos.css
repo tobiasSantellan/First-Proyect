@@ -1,0 +1,70 @@
+/* ******* Reset ******* */
+
+html {
+    box-sizing: border-box;
+    font-family: raleway;
+    font-size: 16px;
+    scroll-behavior: smooth;
+ }
+
+ *, 
+ *::after,
+ *::before {
+    box-sizing: inherit;
+ }
+
+ 
+ a {
+    color: #00a98f;
+    transition: all 0.5s ease-out;
+ }
+
+ a:hover {
+    opacity: 0.75;
+ }
+
+
+/* ****** Header ****** */
+
+.header {
+    position: fixed;
+    top: 0; /*se pega al borde del top*/
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 999;
+    width: 100%;
+    height: 4rem;
+    background-color: #222;
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    margin:0;
+    font-size: 2rem;
+}
+
+.menu {
+    position: fixed;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color:  rgba(243, 237, 237, 0.885);
+}
