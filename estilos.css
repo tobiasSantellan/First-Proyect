@@ -142,6 +142,10 @@ h1 {
     background-color: #222;
 }
 
+.home-btn:hover {
+    filter: drop-shadow(0 10px 10px rgba(1,190,149,.439216));
+}
+
 .home-btn > a {
     text-decoration-line: none;
     color: #00a98f;
