@@ -91,8 +91,6 @@ h1 {
 .home-description {
     display: flex;
     flex-direction: column;
-    /* justify-content: baseline;
-    align-items: flex-start; */
 }
 
 .home-description > h4 {
@@ -112,6 +110,7 @@ h1 {
 .home-profesion > h2 {
     color: #fff;
     font-size: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .home-parrafo {
@@ -122,7 +121,7 @@ h1 {
 
 .home-parrafo > p {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .home-btns {
