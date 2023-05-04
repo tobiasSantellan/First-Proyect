@@ -161,6 +161,7 @@ h1 {
     width: 500px;
     height: 500px;
     transition: transform 2s ease-in-out;
+    filter: drop-shadow(0 10px 10px rgba(1,190,149,.439216));
 }
 
 .home-img > img:hover {
