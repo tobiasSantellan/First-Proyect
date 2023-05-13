@@ -166,12 +166,21 @@ h1 {
 .home-img > img {
     width: 500px;
     height: 500px;
-    transition: transform 2s ease-in-out;
+    transition: transform 1s ease-in-out;
     filter: drop-shadow(0 10px 10px rgba(1,190,149,.439216));
 }
 
 .home-img > img:hover {
     transform: perspective(1000px) translateZ(4rem);
+}
+
+.social-media {
+    width: 100%;
+    height: 100%;
+}
+
+.social-media > h4 {
+    color: #fff;
 }
 
 
@@ -300,4 +309,124 @@ h1 {
     border: thin solid rgba(197, 205, 202, 0.439);
     width: 100%;
     height: 100%;
+}
+
+
+/* ****** Contact ****** */
+
+.contact-container {
+    margin: 0 auto;
+    background-color: #191923;
+    width: 100%;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;  */
+}
+
+.contact-container > h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    color: #00a98f;
+    text-align: center;
+}
+
+.contact-content {
+    margin: 0 auto;
+    /* max-width: 1200px; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.contact-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card > h3 {
+    color: #fff;
+}
+
+.box-shadow-1 {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.svg-social-media-color {
+    fill: #00a98f;
+}
+.social-media a {
+    padding: 0 .4rem;
+    text-decoration: none;
+    fill: #00a98f;
+}
+
+.social-media a:hover {
+    opacity: 0.75;
+}
+
+
+/* ****** Contact Form ****** */
+
+.contact-form {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.contact-form > * {
+    padding: .5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+    background-color: #191923;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    font-size: .85rem;
+    font-family: raleway;
+    outline: none;
+    color: #fff;
+}
+
+.contact-form input {
+    border: 0;
+    padding-left: 0;
+    border-bottom: thin solid gray;
+}
+
+.contact-form textarea {
+    border: thin solid gray;
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 0;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    border: thin solid gray;
+    padding: 1rem;
+}
+
+.contact-form input[type="submit"]:hover {
+    opacity: .75;
+}
+
+.contact-form *::placeholder {
+    color: #626964;
 }
