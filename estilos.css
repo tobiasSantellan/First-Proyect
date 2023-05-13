@@ -13,7 +13,10 @@ html {
     box-sizing: inherit;
  }
 
- 
+
+ body {
+    margin: 0;
+ }
  /* a {
     color: #00a98f;
     transition: all 0.5s ease-out;
@@ -27,21 +30,21 @@ html {
 /* ****** Header ****** */
 
 .header {
-    position: fixed;
-    top: 0; /*se pega al borde del top*/
+     position: fixed; 
     left: 0;
-    bottom: 0; 
     padding: 1rem;
     z-index: 999;
     width: 100%;
     height: 4rem;
-    background-color: #222;
+    background-color:#191923;;
 }
 
 .header > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -76,16 +79,15 @@ h1 {
 /* ****** Home ****** */
 
 .home-container {
-    position: absolute;
-    left: 0;
     display: flex;
     gap: 2rem;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
     padding-top: 6rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    background-color: #222;
+    background-color:#191923;
 }
 
 .home-description {
@@ -100,6 +102,7 @@ h1 {
 
 .green {
     color: #00a98f;
+    font-size: 2.5rem;
 }
 
 .home-profesion {
@@ -138,7 +141,7 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-size: 1rem;
-    background-color: #222;
+    background-color: #191923;;
 }
 
 .home-btn:hover {
@@ -169,4 +172,132 @@ h1 {
 
 .home-img > img:hover {
     transform: perspective(1000px) translateZ(4rem);
+}
+
+
+
+/* ***** Skills ***** */
+
+.skills-container {
+    margin: 0;
+    background-color: #191923;
+    width: 100%;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+
+.skills-container > h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    color: #00a98f;
+    text-align: center;
+    /* width: 90%; */
+    /* border-top: thin solid #fff;
+    border-bottom: thin solid #fff; */
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 5rem;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.skills-logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skills-logo > img {
+    width: 100px;
+    height: 100px;
+    transition: transform 1s ease-in-out;
+}
+
+.skills-logo > img:hover {
+    transform: perspective(100px) translateX(1rem);
+    filter: drop-shadow(0 10px 10px rgba(191, 199, 197, 0.439));
+
+}
+
+.skills-logo > h5 {
+    color: #00a98f;
+    font-size: medium;
+}
+
+/* ***** Projects ***** */
+
+.projects-container {
+    margin: 0 auto;
+    background-color: #191923;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects-container > h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    color: #00a98f;
+    text-align: center;
+}
+
+.projects-cards {
+   display: flex;
+   justify-content: center;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.portfolio-card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #00a98f;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+
+.portfolio-card:hover .portfolio-card-info {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.portfolio-card-info > div {
+    padding: 1rem;
+    border: thin solid rgba(197, 205, 202, 0.439);
+    width: 100%;
+    height: 100%;
 }
