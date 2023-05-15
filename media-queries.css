@@ -79,9 +79,9 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 392px) {
     .home-img > img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 }
