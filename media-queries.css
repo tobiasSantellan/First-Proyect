@@ -50,10 +50,20 @@
     .home-container {
         flex-direction: column;
     }
+
+    .home-img > img {
+        margin: 0 auto;
+    }
+
+    .home-img > img {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 360px) {
     .home-img > img {
-        display: none;
+        width: 200px;
+        height: 200px;
     }
 }
