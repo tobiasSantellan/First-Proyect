@@ -19,8 +19,9 @@
 
     .projects-cards {
         display: block;
-        width: 80%;
+        width: 60%;
        }
+
 
 }
 
@@ -77,6 +78,12 @@
     .contact-container > h2 {
         margin-right: 2rem;
     }
+
+    .projects-cards {
+        display: block;
+        width: 80%;
+       }
+
 }
 
 @media (max-width: 392px) {
