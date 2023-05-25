@@ -16,11 +16,107 @@ html {
 
  body {
     margin: 0;
+    overflow-x: hidden;
  }
 
 
+/* ****** Animaciones ****** */
 
+/* Animacion Fade */
 
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animacion Slide-Up */
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+
+    }
+    
+}
+
+/* Animacion Slide-right */
+
+@keyframes slide-right {
+    from {
+        transform: translateX(500px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Animacion Slide-left */
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Animacion al h4 */
+
+.home-container h4 {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+/* Animacion al h2 */
+
+.home-profesion h2 {
+    opacity: 0; 
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+    
+} 
+
+/* Animacion al p */
+
+.home-parrafo p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 0.9s ease-in-out;
+    animation-delay: 0.4s;
+}
+
+/* Animacion al p del home-btn */
+
+.home-btns p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-left 0.9s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+/* Animacion al svg */
+
+.home-social-media svg {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-left 0.9s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+/* Animacion al img */
+
+.home-img img {
+    animation: fade 1s ease-in, slide-right 1.5s ease-in-out;
+
+}
 
 /* ****** Header ****** */
 
