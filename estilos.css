@@ -105,11 +105,11 @@ html {
 
 /* Animacion al svg */
 
-.home-social-media svg {
+/* .home-social-media svg {
     opacity: 0;
-    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-left 0.9s ease-in-out;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final, slide-left 0.9s ease-in-out;
     animation-delay: 0.5s;
-}
+} */
 
 /* Animacion al img */
 
