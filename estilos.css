@@ -83,7 +83,7 @@ html {
 /* Animacion al img */
 
 .home-img img {
-    animation: fade 1s ease-in, slide-right 1.2s ease-out;
+    animation: fade 1s ease-in, slide-right 1.7s ease-out;
 
 }
 
