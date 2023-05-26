@@ -54,6 +54,29 @@
 }
 
 @media (max-width:700px) {
+
+    /* Animacion al h4 */
+
+   .home-container h4 {
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+    } 
+
+/* Animacion al h2 */
+
+   .home-profesion h2 {
+    opacity: 0; 
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 0.9s ease-in-out;
+    animation-delay: 0.3s;
+    }  
+
+    /* Animacion al p */
+
+    .home-parrafo p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 0.9s ease-in-out;
+    animation-delay: 0.4s;
+    } 
+
     .home-container {
         flex-direction: column;
     }
@@ -67,12 +90,20 @@
         height: 300px;
     }
 
+    .skills-container {
+        padding-top: 4.2rem;
+    }
+
     .skills-container > h2 {
         margin: 0 auto;
     }
 
     .projects-container > h2 {
         margin-right: 2rem;
+    }
+
+    .contact-container {
+        padding-top: 2rem;
     }
 
     .contact-container > h2 {

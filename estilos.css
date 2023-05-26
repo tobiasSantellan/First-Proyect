@@ -72,49 +72,18 @@ html {
     }
 }
 
-/* Animacion al h4 */
-
-.home-container h4 {
-    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
-}
-
-/* Animacion al h2 */
-
-.home-profesion h2 {
-    opacity: 0; 
-    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 0.9s ease-in-out;
-    animation-delay: 0.3s;
-    
-} 
-
-/* Animacion al p */
-
-.home-parrafo p {
-    opacity: 0;
-    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 0.9s ease-in-out;
-    animation-delay: 0.4s;
-}
-
 /* Animacion al p del home-btn */
 
 .home-btns p {
     opacity: 0;
-    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-left 0.9s ease-in-out;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-left 1.2s ease-out;
     animation-delay: 0.5s;
 }
-
-/* Animacion al svg */
-
-/* .home-social-media svg {
-    opacity: 0;
-    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final, slide-left 0.9s ease-in-out;
-    animation-delay: 0.5s;
-} */
 
 /* Animacion al img */
 
 .home-img img {
-    animation: fade 1s ease-in, slide-right 1.5s ease-in-out;
+    animation: fade 1s ease-in, slide-right 1.2s ease-out;
 
 }
 
@@ -373,6 +342,7 @@ h1 {
     background-color: #191923;
     width: 100%;
     overflow: hidden;
+    padding-bottom: 3.5rem;
 }
 
 .projects-container > h2 {
@@ -441,6 +411,7 @@ h1 {
     background-color: #191923;
     width: 100%;
     overflow: hidden;
+    padding-top: 2rem;
 }
 
 .contact-container > h2 {
